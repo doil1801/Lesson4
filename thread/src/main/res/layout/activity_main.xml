@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <!-- Часть A: имя главного потока -->
+        <TextView
+            android:id="@+id/textViewInfo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="14sp" />
+
+        <!-- Часть B и C: ANR и фоновый поток -->
+        <Button
+            android:id="@+id/buttonMainThread"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="Нагрузка в ГЛАВНОМ потоке (ANR)" />
+
+        <Button
+            android:id="@+id/buttonBackground"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Нагрузка в ФОНОВОМ потоке" />
+
+        <!-- Часть D: основное задание -->
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="32dp"
+            android:text="Среднее количество пар в день за месяц"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/editTextPairs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Общее количество пар за месяц"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+        <EditText
+            android:id="@+id/editTextDays"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Количество учебных дней"
+            android:importantForAutofill="no"
+            android:inputType="number" />
+
+        <Button
+            android:id="@+id/buttonCalc"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Посчитать" />
+
+        <TextView
+            android:id="@+id/textViewResult"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:textSize="18sp" />
+    </LinearLayout>
+</ScrollView>

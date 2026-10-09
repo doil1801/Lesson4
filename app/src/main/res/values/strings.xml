@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Lesson4</string>
+    <string name="student_number">Мой номер по списку №10</string>
+    <string name="edittext_mirea_hint">Мой номер по списку</string>
+    <string name="button_mirea_text">Показать</string>
+    <string name="button_no_id_text">Без id</string>
+    <string name="entered_text">Введено: %1$s</string>
+    <string name="cover_description">Обложка альбома</string>
+    <string name="prev_description">Предыдущий трек</string>
+    <string name="play_description">Воспроизвести / пауза</string>
+    <string name="next_description">Следующий трек</string>
+    <string name="default_time">0:00</string>
+</resources>
